@@ -3,4 +3,66 @@
 }
 body {
   font-family: "Inter", "Inria Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+
+}
+.page-wrapper {
+  overflow: hidden;
+  width: 390px;
+  border-radius: 10px;
+  background: #F2F2F2;
+  box-shadow: 0 0 20px 2px rgba(139, 139, 139, 0.46);
+}
+.header {
+  font-family: 'Inter';
+  color: #FFF;
+  padding: 17px 73px 89px 20px;
+  border-radius: 0 0 30px 30px;
+background: linear-gradient(0deg, rgba(242, 242, 242, 0.75) -10.05%, rgba(0, 0, 0, 0.61) 100%), url('../img/bc_image.png') lightgray 50% / cover no-repeat;
+}
+.text {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+.text-description {
+  margin: 7px 0 0 0;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+}
+.body_container {
+  padding: 0 10px;
+}
+.user_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -45px;
+  font-family: 'Inter';
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  padding-bottom: 16px;
+  margin-bottom: 9px;
+}
+.user_avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin: -44px 0 20px 0;
+}
+.user_name {
+ font-size: 20px;
+ line-height: normal;
+ font-weight: 400;
+ margin: 0 0 8px 0;
+}
+.user_description {
+  color: #888888;
+  font-size: 13px;
+font-weight: 300;
+line-height: normal;
+margin: 0;
 }
