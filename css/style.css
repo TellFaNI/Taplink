@@ -5,21 +5,27 @@ body {
   font-family: "Inter", "Inria Sans", sans-serif;
   display: flex;
   justify-content: center;
-
 }
 .page-wrapper {
   overflow: hidden;
   width: 390px;
   border-radius: 10px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   box-shadow: 0 0 20px 2px rgba(139, 139, 139, 0.46);
+  padding-bottom: 12px;
 }
 .header {
-  font-family: 'Inter';
-  color: #FFF;
+  font-family: "Inter";
+  color: #fff;
   padding: 17px 73px 89px 20px;
   border-radius: 0 0 30px 30px;
-background: linear-gradient(0deg, rgba(242, 242, 242, 0.75) -10.05%, rgba(0, 0, 0, 0.61) 100%), url('../img/bc_image.png') lightgray 50% / cover no-repeat;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(242, 242, 242, 0.75) -10.05%,
+      rgba(0, 0, 0, 0.61) 100%
+    ),
+    url("../img/bc_image.png") lightgray 50% / cover no-repeat;
 }
 .text {
   font-size: 24px;
@@ -27,12 +33,12 @@ background: linear-gradient(0deg, rgba(242, 242, 242, 0.75) -10.05%, rgba(0, 0, 
   font-weight: 500;
 }
 .text-description {
-  margin: 7px 0 0 0;
-font-size: 15px;
-font-style: normal;
-font-weight: 500;
+  margin-top: 7px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
 }
-.body_container {
+.body_wrapper {
   padding: 0 10px;
 }
 .user_container {
@@ -40,7 +46,7 @@ font-weight: 500;
   align-items: center;
   flex-direction: column;
   margin-top: -45px;
-  font-family: 'Inter';
+  font-family: "Inter";
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
@@ -54,15 +60,29 @@ font-weight: 500;
   margin: -44px 0 20px 0;
 }
 .user_name {
- font-size: 20px;
- line-height: normal;
- font-weight: 400;
- margin: 0 0 8px 0;
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+  margin-bottom: 8px;
 }
 .user_description {
   color: #888888;
   font-size: 13px;
-font-weight: 300;
-line-height: normal;
-margin: 0;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+}
+.body_container {
+  background-color: white;
+  height: 788px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+.buttons {
+  margin-bottom: 15px;
+}
+.button_twitter {
+  display: inline-block;
+  height: 50px;
+  border: 2px solid black;
 }
