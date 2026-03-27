@@ -73,16 +73,31 @@ body {
   margin: 0;
 }
 .body_container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
   background-color: white;
   height: 788px;
   border-radius: 10px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
 }
 .buttons {
-  margin-bottom: 15px;
-}
-.button_twitter {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   height: 50px;
-  border: 2px solid black;
+  width: 100%;
+  gap: 10px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  border-radius: 5px;
+}
+.button.twitter {
+  background: #1da1f2;
+}
+.button.youtube {
+  background: #ff0000;
 }
